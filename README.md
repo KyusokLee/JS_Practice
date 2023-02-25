@@ -1,2 +1,3 @@
-### JavaScriptの勉強記録
-- A repository of JavaScript practice
+## 📝JavaScriptの勉強記録
+-----
+### 基礎文法 ~ 応用文法
