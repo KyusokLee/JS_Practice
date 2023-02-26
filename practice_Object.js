@@ -72,7 +72,7 @@ for (key in Mike) {
     console.log(Object.keys(Mike));
     console.log(Object.values(Mike));
     // entriesはDictionary型で出力する ([key, value]の対)
-    console.log(Object.entries(Mike));
+    console.log("entries: " + Object.entries(Mike));
 }
 
 for (const [key, value] of Object.entries(Mike)) {
