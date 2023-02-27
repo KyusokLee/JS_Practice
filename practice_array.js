@@ -129,3 +129,33 @@ console.log(filterResult2);
 // user.nameとuser.ageの両方の条件を満たすObjectだけをfilterする
 let filterResult3 = userList2.filter(user => user.age > 19 && user.name === 'Lee');
 console.log(filterResult3);
+
+// array.concat(): 配列の複製
+let pracArray = [10, 20, 30, 41, 55];
+
+// function getPracArray(array) {
+//   let newArray = array;
+
+//   // 降順
+//   array.sort((a, b) => b - a);
+//   console.log(newArray);
+//   console.log(array);
+
+//   // こうすると、newArrayも変わってしまう..
+//   // 理由: newArrayがarrayを参照しているので、もとの配列も変わってしまう
+// }
+
+// getPracArray(pracArray);
+
+function getNewPracArray(array) {
+  // concatで複製
+  // こうすると、もとのものだけを変えて、newArrayは変更前のものを保つ
+  let newArray = array.concat();
+
+  // 降順
+  array.sort((a, b) => b - a);
+  console.log(newArray);
+  console.log(array);
+}
+
+getNewPracArray(pracArray);
